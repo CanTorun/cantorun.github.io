@@ -3,4 +3,6 @@ es</description></item><item><title/><link>https://cantorun.github.io/archives/<
 Jane Doe
 Anatole Street 10
 2016 GoHugo
-Germany</description></item><item><title/><link>https://cantorun.github.io/post/deneme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cantorun.github.io/post/deneme/</guid><description/></item></channel></rss>
+Germany</description></item><item><title/><link>https://cantorun.github.io/post/deneme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cantorun.github.io/post/deneme/</guid><description/></item><item><title/><link>https://cantorun.github.io/post/deneme4/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://cantorun.github.io/post/deneme4/</guid><description>echo -e &amp;lsquo;#deneme4\ndeneme4 deneme
+ki
+es&amp;rsquo; | /home/runner/work/hugo-source/hugo-source/frontmatterify</description></item></channel></rss>
