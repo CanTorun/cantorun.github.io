@@ -1,0 +1,374 @@
+<!doctype html><html dir=ltr lang=tr data-theme><head>
+<title>
+Can Torun
+|
+CTF - OverTheWire Bandit Çözümleri 1-15
+</title>
+<meta charset=utf-8><meta name=generator content="Hugo 0.88.1"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name=description content="
+      OverTheWire Bandit CTF'in çözümleri 1 den 15 e kadar.
+
+
+    ">
+<link rel=stylesheet href=/css/main.min.d04db3d283a8902645b5154500a524df7225f59e7610e3dacb52669d842a7d5f.css integrity="sha256-0E2z0oOokCZFtRVFAKUk33Il9Z52EOPay1JmnYQqfV8=" crossorigin=anonymous type=text/css>
+<link rel=stylesheet href=/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS+yuWSR4=" crossorigin=anonymous type=text/css>
+<link rel=stylesheet href=/css/custom.min.ba36a7508da341b7f2b3ac428d3fa2b6da9f215959bb3cfad5089b4816bd394d.css integrity="sha256-ujanUI2jQbfys6xCjT+ittqfIVlZuzz61QibSBa9OU0=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous>
+<link rel="shortcut icon" href=/favicons/favicon.ico type=image/x-icon>
+<link rel=apple-touch-icon sizes=180x180 href=/favicons/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicons/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicons/favicon-16x16.png>
+<link rel=canonical href=/post/ctf-overthewire-bandit-cozumleri-1-15/>
+<script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
+<script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://cantorun.github.io/images/site-feature-image.png">
+<meta name=twitter:title content="CTF - OverTheWire Bandit Çözümleri 1-15">
+<meta name=twitter:description content="OverTheWire Bandit CTF'in çözümleri 1 den 15 e kadar.">
+<meta property="og:title" content="CTF - OverTheWire Bandit Çözümleri 1-15">
+<meta property="og:description" content="OverTheWire Bandit CTF'in çözümleri 1 den 15 e kadar.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cantorun.github.io/post/ctf-overthewire-bandit-cozumleri-1-15/"><meta property="og:image" content="https://cantorun.github.io/images/site-feature-image.png"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-09-14T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-09-14T00:00:00+00:00"><meta property="og:site_name" content="Can Torun">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"post","name":"CTF - OverTheWire Bandit Çözümleri 1-15","headline":"CTF - OverTheWire Bandit Çözümleri 1-15","alternativeHeadline":"","description":"
+      OverTheWire Bandit CTF\u0027in çözümleri 1 den 15 e kadar.
+
+
+    ","inLanguage":"tr","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cantorun.github.io\/post\/ctf-overthewire-bandit-cozumleri-1-15\/"},"author":{"@type":"Person","name":"Can Torun"},"creator":{"@type":"Person","name":"Can Torun"},"accountablePerson":{"@type":"Person","name":"Can Torun"},"copyrightHolder":{"@type":"Person","name":"Can Torun"},"copyrightYear":"2021","dateCreated":"2021-09-14T00:00:00.00Z","datePublished":"2021-09-14T00:00:00.00Z","dateModified":"2021-09-14T00:00:00.00Z","publisher":{"@type":"Organization","name":"Can Torun","url":"https://cantorun.github.io","logo":{"@type":"ImageObject","url":"https:\/\/cantorun.github.io\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":["https://cantorun.github.io/images/site-feature-image.png"],"url":"https:\/\/cantorun.github.io\/post\/ctf-overthewire-bandit-cozumleri-1-15\/","wordCount":"1220","genre":["CTF"],"keywords":["CTF","OverTheWire","Bandit","Çözüm"]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9557042978562256" crossorigin=anonymous></script>
+</head>
+<body>
+<header><div class=page-top>
+<a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+</a>
+<nav>
+<ul class=nav__list id=navMenu>
+<div class=nav__links>
+<li>
+<a href=/ title>Anasayfa</a>
+</li>
+<li>
+<a href=/post/ title>Yazılar</a>
+</li>
+<li>
+<a href=/about/ title>Hakkımda</a>
+</li>
+</div>
+<li>
+<a class=theme-switch title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<div class=wrapper>
+<aside><div class=sidebar>
+<div class=sidebar__content>
+<div class=logo-title>
+<div class=title>
+<img src=/images/avatar.jpg alt="profile picture">
+<h3 title><a href=/>Can Torun</a></h3>
+<div class=description>
+<p>#!/bin/sh<br> /home/tr<br> </p>
+</div>
+</div>
+</div>
+<ul class=social-links>
+<li>
+<a href=https://github.com/cantorun/ rel=me aria-label=GitHub>
+<i class="fab fa-github fa-2x" aria-hidden=true></i>
+</a>
+</li>
+<li>
+<a href=https://www.instagram.com/ rel=me aria-label=instagram>
+<i class="fab fa-instagram fa-2x" aria-hidden=true></i>
+</a>
+</li>
+</ul>
+</div><footer class="footer footer--sidebar">
+<div class=by_farbox>
+<ul class=footer__list>
+<li class=footer__item>
+&copy;
+Can Torun
+2021
+</li>
+<li class=footer__item>
+<a href=/imprint/ title>
+Yasal
+</a>
+</li>
+</ul>
+</div>
+</footer>
+<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-18600398-4','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZHFCQ4QJY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-TZHFCQ4QJY')</script>
+</div>
+</aside>
+<main>
+<div class=autopagerize_page_element>
+<div class=content>
+<div class="post
+animated fadeInDown">
+<div class=post-content>
+<img class=post-thumbnail src=/images/thumbs/thumb-bandit1-15.jpg alt="Thumbnail image">
+<div class=post-title>
+<h1>CTF - OverTheWire Bandit Çözümleri 1-15</h1>
+<div class=info>
+<em class="fas fa-calendar-day"></em>
+<span class=date>
+14/9/2021
+</span>
+<em class="fas fa-stopwatch"></em>
+<span class=reading-time>6 dakikalık okuma süresi</span>
+</div>
+</div><br>
+<hr>
+<h3>İçindekiler</h3>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#bölüm-0>Bölüm 0</a></li>
+<li><a href=#bölüm-0--1>Bölüm 0 → 1</a></li>
+<li><a href=#bölüm-1--2>Bölüm 1 → 2</a></li>
+<li><a href=#bölüm-2--3>Bölüm 2 → 3</a></li>
+<li><a href=#bölüm-3--4>Bölüm 3 → 4</a></li>
+<li><a href=#bölüm-4--5>Bölüm 4 → 5</a></li>
+<li><a href=#bölüm-5--6>Bölüm 5 → 6</a></li>
+<li><a href=#bölüm-6--7>Bölüm 6 → 7</a></li>
+<li><a href=#bölüm-7--8>Bölüm 7 → 8</a></li>
+<li><a href=#bölüm-8--9>Bölüm 8 → 9</a></li>
+<li><a href=#bölüm-9--10>Bölüm 9 → 10</a></li>
+<li><a href=#bölüm-10--11>Bölüm 10 → 11</a></li>
+<li><a href=#bölüm-11--12>Bölüm 11 → 12</a></li>
+<li><a href=#bölüm-12--13>Bölüm 12 → 13</a></li>
+<li><a href=#bölüm-13--14>Bölüm 13 → 14</a></li>
+<li><a href=#bölüm-14--15>Bölüm 14 → 15</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<hr>
+<br><p><a href=https://overthewire.org/wargames/>OverTheWire</a> üzerindeki Bandit CTF&rsquo;i beraber çözeceğiz. Oyun farklı bölümlerden oluşuyor ve her bölümdeki bayrak bir sonraki bölümün şifresi olarak kullanıyor. Toplam otuz dört bölümden oluşan oyun uzun olacağı için çözümleri seri halinde yayınlayacağım. Serinin ilk yazısında on beşinci bölüme kadar ilerleyeceğiz.</p>
+<hr>
+<h3 id=bölüm-0>Bölüm 0</h3>
+<p>Oyuna bağlanmak için herhangi bir ssh istemcisini kullanabilirsiniz. Ben WLS Kali&rsquo;de ssh tercih ettim.</p>
+<p><code>ssh bandit0@bandit.labs.overthewire.org -p 2220</code></p>
+<blockquote>
+<p><strong>Kullanıcı adı:</strong> <em>bandit0</em></p>
+<p><strong>Şifre:</strong> <em>bandit0</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-0--1>Bölüm 0 → 1</h3>
+<p>İkinci bölüm için gerekli şifreyi bulmamız gerekiyor. Öncelikle içinde bulunduğumuz dizinin içeriğini <em>ls</em> komutu ile listeliyorum.</p>
+<p><em>Readme</em> adında bir dosya bulduk. <em>cat</em> komutundan faydalanarak içeriğini ekrana bastıralım.</p>
+<p><code>cat readme</code></p>
+<p><img src=https://user-images.githubusercontent.com/878595/132492467-763237aa-d530-435e-9f8b-89a64845d489.jpg#center alt=bandit1></p>
+<p>İlk bayrağımızı bulduk.</p>
+<blockquote>
+<p><strong>Kullanıcı Adı:</strong> <em>bandit1</em></p>
+<p><strong>Şifre:</strong> <em>boJ9jbbUNNfktd78OOpsqOltutMc3MY1</em></p>
+</blockquote>
+<p><em>Yine <em>ssh</em> komutunu kullanarak ikinci bölüme bağlanıyoruz. <em>@</em> işaretinden önce gelen kullanıcı adını <em>&lsquo;bandit2&rsquo;</em> olarak değiştirmeyi unutmayın.</em>
+<code>ssh bandit2@bandit.labs.overthewire.org -p 2220</code></p>
+<hr>
+<h3 id=bölüm-1--2>Bölüm 1 → 2</h3>
+<p><strong>İpucu:</strong> Ev dizini içerisinde <code>-</code> isimli dosyada bayrağın bulunduğunu belirtilmiş.</p>
+<p><code>-</code> işareti komutlara parametre iletmek için kullanılan özel bir operatör olduğu için <code>cat -</code> komutu işe yaramayacaktır. Bunun önüne geçmenin bir kaç yolu var. Ben tam dosya yolunu yazmayı tercih ettim. <em>Cat</em> komutunu <code>cat ./-</code> şeklinde düzenledim.
+<img src=https://user-images.githubusercontent.com/878595/132493960-114d88d8-bde3-4490-8f40-a988fb19904f.jpg#center alt=e2></p>
+<blockquote>
+<p><strong>Kullanıcı Adı:</strong> <em>bandit2</em></p>
+<p><strong>Şifre:</strong> <em>CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-2--3>Bölüm 2 → 3</h3>
+<p><strong>İpucu:</strong> Bayrağın bulunduğu dosyanın adında boşluklar olduğu belirtilmiş.</p>
+<p>Yine önce <em>ls</em> ile kontrol ediyoruz. <em>&lsquo;spaces in the filename&rsquo;</em> adlı dosyayı ekrana bastırmamız gerekiyor. Bu sefer boşluklardan <code>\</code> operatörü ile kaçıyoruz. <em>Cat</em> komutumuz <code>cat ./spaces\ in\ this\ filename</code> halini alıyor. <code>cat ./</code> yazıp <em>tab</em> tuşuna basarsanız gerekli kaçış karakterini komut satırı otomatik olarak oluşturacaktır.
+<img src=https://user-images.githubusercontent.com/878595/132495322-2f73b922-2e02-49db-b77e-a0549316a93c.jpg#center alt=e3></p>
+<blockquote>
+<p><strong>Kullanıcı Adı:</strong> <em>bandit3</em></p>
+<p><strong>Şifre:</strong> <em>UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-3--4>Bölüm 3 → 4</h3>
+<p><strong>İpucu:</strong> Şifrenin <em>&lsquo;inhere&rsquo;</em> adlı dizinde gizli bir dosyanın içerisinde olduğu belirtilmiş.</p>
+<p>Rutin olarak <em>ls</em> ile kontrol ediyorum. Daha sonra <em>cd</em> ile <em>&lsquo;inhere&rsquo;</em> adlı dizine geçerek <em>ls</em> ile dizin içeriğini listeliyorum. Ancak dosya gizli olduğu için <em>ls</em> komutunu <em>-a</em> parametresi ile kullanıyorum. Çıktıda görünen <code>.</code> şu anki geçerli dizinin <code>..</code> is bir üst dizinin yolları, <em>'.hidden'</em> adlı dosya ise bayrağımızı içeren dosya.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/132496143-8af1a519-5452-4ff3-ac43-c0518e1f2788.jpg#center alt=e4></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>pIwrPrtPN36QITSp3EQaw936yaFoFgAB</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-4--5>Bölüm 4 → 5</h3>
+<p><strong>İpucu:</strong> <em>&lsquo;inhere&rsquo;</em> dizinindeki insanlar tarafından okunabilir formattaki dosyada bulunduğu belirtilmiş.</p>
+<p><code>ls -l</code> ile dizin içerisindeki dosyalara bakıyorum. <em>'-file'</em> ile başlayan bir çok dosya var <em>file</em> komutundan yararlanarak dosyalar ile ilgili bilgi alacağız. <code>file ./inhere/-file0*</code> <em>(* burada herhangi bir karakter anlamına geliyor)</em> komutu ile bütün dosyaların tipini öğreniyorum. <em>ASCDII Text</em> tipi insanların okuyabileceği bir format. <code>cat ./inhere/-file07</code> ile dosyanın içeriğini ekrana bastıralım.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/132499638-de4f0b51-8354-4c8e-b7c6-a2cf1f0be87e.jpg#center alt=e4></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>koReBOKuIDDepwhWk7jZC0RTdopnAYKh</em></p>
+</blockquote>
+<p><em>Not: Bu bölümde cd ile dizin değiştirmeden çalışabileceğimizi de görmüş olduk.</em></p>
+<hr>
+<h3 id=bölüm-5--6>Bölüm 5 → 6</h3>
+<p><strong>İpucu:</strong> <em>inhere</em> dizininde insanların okuyabileceği, çalıştırılabilir dosya olmayan ve <em>1033 byte</em> uzunluğunda bir dosya arıyoruz.</p>
+<p>Dosyayı bulmak için <em>find</em> komutundan yararlanacağız.</p>
+<ul>
+<li><code>-readable</code> parametresi insanlar tarafından okunabilir,</li>
+<li><code>-size 1033c</code> dosyanın büyüklüğünün 1033 byte,</li>
+<li><code>-executable</code> ise çalıştırılabilir dosyaları <em>(tersini almak için <code>!</code> operatöründen yararlanacağız.)</em> belirtiyor.</li>
+</ul>
+<p><code>find inhere/ -readable -size 1033c ! -executable</code></p>
+<p><img src=https://user-images.githubusercontent.com/878595/132503814-2bb61cc2-2693-4c82-a555-c6074b74c659.jpg#center alt=ep5></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>DXjZPULLxYr17uwoI01bNLQbtFemEgo7</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-6--7>Bölüm 6 → 7</h3>
+<p><strong>İpucu:</strong> Sunucunun herhangi bir yerinde <em>bandit7</em> kullanıcısına ait <em>bandit6</em> grubunda <em>33 bayt</em> boyutunda bir dosyayı arıyoruz.</p>
+<p>Yine benzer şekilde <em>find</em> komutunu kullanacağız. Komutumuz <code>find -user bandit7 -group bandit6 -size 33c</code>.</p>
+<ul>
+<li><code>-user bandit7</code> parametresi dosyanın <em>bandit7</em> kullanıcısına ait olduğunu,</li>
+<li><code>-group bandit6</code> dosyanın <em>bandit6</em> grubuna ait olduğunu.</li>
+<li><code>-size 33c</code> ise dosyanın büyüklüğünün 33 byte olduğunu belirtiyor.</li>
+</ul>
+<p>Ancak komutu bu şekilde kullanırsak okuma iznimizin olmadığı dosyalar ekrana hata mesajı döndürecek ve çıktımız kalabalıklaşacaktır. Bunu önlemek için <code>2>/dev/null</code> eki ile <em>sterr(2 burada stderr&rsquo;in giriş çıkış tanımlayıcısı)</em> mesajlarına <em>/dev/null</em>&lsquo;a yönlendirerek bir nevi yok ediyoruz.</p>
+<p><code>find -user bandit7 -group bandit6 -size 33c 2>/dev/null</code></p>
+<p><img src=https://user-images.githubusercontent.com/878595/132510947-d17354cf-0b68-4465-83d4-4ca5c5c4bcb0.jpg#center alt=ep6></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-7--8>Bölüm 7 → 8</h3>
+<p><strong>İpucu:</strong> Şifremiz <em>data.txt</em> içerinde <em>millionth</em> kelimesinin yanında yer alıyor.</p>
+<p><em>Cat</em> komutu ile <em>data.txt</em> dosyasının içeriğini ekrana bastırırsak göreceğiz ki dosya içeriği oldukça uzun. <em>Millionth</em> kelimesini aramak için dosya içeriğini <code>|</code> operatörüyle <em>grep</em> komutuna aktarıyoruz. <em>grep</em> komutu bizim için içerisinde <em>millionth</em> içeren satırları filitreliyor.</p>
+<p><code>cat data.txt | grep "millionth"</code></p>
+<p><img src=https://user-images.githubusercontent.com/878595/132534207-dfcb06e1-48a1-487f-a1ab-c2239e7c7a02.jpg#center alt=e7></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>cvX2JJa4CFALtqS87jk27qwqGhBM9plV</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-8--9>Bölüm 8 → 9</h3>
+<p><strong>İpucu :</strong> <em>data.txt</em> içerisinde sadece bir defa yer alan satırda şifremiz bulunuyor.</p>
+<p>Dosyanın içerisinde bir defa geçen veriyi arıyoruz. Bu nedenle <em>uniq</em> komutu işimize yarayacaktır.
+Ancak <em>uniq</em> komutu iki dosyayı karşılaştırmaya yarar girdi olarak <em>pipe</em> ile veri girersek alt alta denk gelen satırları karşılaştırıp birbirinin tekrarı olan satırları ekrana bastıracak. Bunun için önce dosyayı alfabetik sıraya göre sıralamamız lazım ki <em>uniq</em> tekrar eden satırları bulabilsin.
+Bu noktada ise <em>sort</em> komutundan faydalanıyoruz. Son olarak tekrar eden satırları değil tam tersi bir kere yer alan satırı arıyoruz bunun için de <code>-u</code> parametresini kullanacağız.</p>
+<p><code>cat data.txt | sort | uniq -u</code></p>
+<p><img src=https://user-images.githubusercontent.com/878595/132564328-69978480-a1e3-4d0e-9889-a7ad565e8ae3.png#center alt=e8></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-9--10>Bölüm 9 → 10</h3>
+<p><strong>İpucu:</strong> Şifremiz <em>data.txt</em> içerisinde bir kaç <em>=</em> ile işaretli ve insanlar tarafından okunabilir nitelikte.</p>
+<p><em>Strings</em> komutu bir dosya içerisinde yer alan bütün yazdırılabilir*(yani insanlar tarafından okunabilir)* veriyi listeler. Bu komutun çıktısına *grep* komutuna yönlendirip *=* işaretini filtrelememiz yeterli olacaktır.</p>
+<p><code>strings data.txt | grep '='</code></p>
+<p><img src=https://user-images.githubusercontent.com/878595/132565565-3b7deb2b-0f0f-40ad-8cc5-4e69860a4b38.png#center alt=e9></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-10--11>Bölüm 10 → 11</h3>
+<p><strong>İpucu:</strong> <em>data.txt</em> dosyası içerisinde <em>base64</em> ile şifrelenmiş halde.</p>
+<p><em>Base64</em> komutuna şifreyi çözme işlemi için <em>-d</em> parametresini veriyoruz.</p>
+<p><code>base64 -d data.txt</code></p>
+<p><img src=https://user-images.githubusercontent.com/878595/132566200-1134ae56-ec54-429c-ada2-28ffff6b01b4.png#center alt=e10></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-11--12>Bölüm 11 → 12</h3>
+<p><strong>İpucu:</strong> Şifrenin bütün harfleri kendisinden sonra gelen on üçüncü harf ile değiştirilmiş, ve okumamız için <a href=https://en.wikipedia.org/wiki/ROT13>Rot13</a> ile ilgili bir link bırakılmış.</p>
+<p><em>ROT13</em> aslında bir çeşit sezar şifreleme. Kısaca özetlersek <a href=https://tr.wikipedia.org/wiki/Sezar_%C5%9Fifrelemesi>sezar şifreleme</a> bir harfin kendisinden X sayı sonra gelen harfle değiştirildiği ilkel ve basit bir şifreleme metodudur. İngiliz alfabesinde yirmi altı adet harf bulunması nedeni ile <em>rot13</em> tersine çalışan bir fonksiyondur. Yani şifreli metni 13 harf sonraki harfler ile değiştirdiğimiz zaman orijinal metine dönüş bulunuyoruz.</p>
+<p>Bu işlemi yapabilmek için <em>tr</em> komutundan yararlanacağız. <em>Tr</em> komutuna bir birine dönüştürmek istediğimiz iki diziyi parametre olarak vermemiz gerekiyor.</p>
+<p>İpucunda büyük ve küçük harflere dikkat etmemiz gerektiği zaten bahsedilmişti. O zaman ilk dizimiz <em>&lsquo;A-Za-z&rsquo;</em> olacak. İkinci dizi ise A+13&rsquo;ten*(N harfine denk geliyor)* başlayacak ve Z&rsquo;ye kadar gidecek daha sonra alfabenin diğer yarısını da içerisine almak adına N+13&rsquo;ten(A harfine denk geliyor) M&rsquo;ye(N harfinden bir önceki harf Z+12) kadar gidecek. Daha sonra ise aynı işlemi küçük harfler için tanımlıyoruz.</p>
+<p><code>tr 'A-Za-z' 'N-ZA-Mn-za-m</code></p>
+<p><img src=https://user-images.githubusercontent.com/878595/133211042-267ca0ac-58f7-4e87-bad1-19d3c90b78d8.png#center alt=e11></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-12--13>Bölüm 12 → 13</h3>
+<p><strong>İpucu:</strong> <em>Data.txt</em> dosyasında üst üste sıkıştırılmış bir dizi dosyanın <em>hexdump</em>&lsquo;ı olduğu belirtilmiş.</p>
+<p>Rahat çalışabilmemiz adına <em>data.txt</em> dosyasını <em>/tmp</em> dizini altına açacağımız bir dizinin içerisine kopyalayıp orada çalışmamız önerilmiş. Öncelikle bu işlemleri yapıyorum.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/132576221-a7df09f0-d5e3-443f-b3fe-6699e47aa927.png#center alt=ep12-1></p>
+<p>Daha sonrasında <em>hexdump</em>&lsquo;ı geri çevirmek için <code>xxd -r data.txt > arsiv1</code> komutundan yararlanıyorum ve <em>file</em> komutu yardımıyla dosyanın hangi sıkıştırma algoritması kullanılarak sıkıştırıldığını öğreniyorum. Daha sonrasında doğru aracı kullanarak arşivi açıyorum.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/132576638-b67b470a-f523-4500-b8ab-df1b3a3bd3d3.png#center alt=ep12-2></p>
+<p>Oldukça tekrar eden ve sıkıcı bir bölüm olmuş. O yüzden bütün komutlara ve ekran görüntülerine yer vermeyeceğim. Yapılan işlem döngü halinde <em>file</em> ile arşiv türünü öğrenip <em>gzip, bzip2 ve tar</em> kullanarak arşivleri açmaktan ibaret en sonunda <em>ASCII</em> tipinde bir dosyaya ulaşarak bölümü tamamlayacaksınız.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/132577883-af805e2c-2ebd-49a7-83f1-7af6472e292f.png#center alt=ep12-4></p>
+<p>Dikkat etmeniz gereken iki nokta var:
+<strong>1.</strong> <em>Gzip</em> dosya uzantılarının uyumlu olması bekliyor o yüzden <em>gzip</em> arşivlerini açmadan önce. <code>mv [dosya] [dosya].gz</code> ile dosya uzantılarını düzelttim.
+<strong>2.</strong> Yine <em>gzip</em> dosyanın açılan adını arşivli halinden taşıyor ve orijinal dosyayı siliyor bunun önüne geçmek isterseniz <em>-dkN</em> parametrelerinden yararlanabilirsiniz. <code>gzip -dkn [dosya].gz</code></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-13--14>Bölüm 13 → 14</h3>
+<p><strong>İpucu:</strong> Şifrenin <em>/etc/bandit_pass/bandit14</em> dosyasında olduğunu ancak sadece <em>bandit14</em> kullanıcısı tarafından okunabileceğini söylüyor. Buna ek olarak <em>bandit14</em> kullanıcısı için <em>private ssh</em> anahtarımız olduğu ve yerel sunucunun <em>localhost</em> olduğu belirtilmiş.</p>
+<p><em>Ls</em> ile listeleyince anahtar dosyamızı buluyoruz. Komutumuza bu dosyayı ekleyerek <code>ssh -i sshkey.private bandit14@localhost</code> haline getiriyoruz.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/132578857-f3700779-1a70-41a7-9c97-09ac0e5cf856.png#center alt=ep12-4></p>
+<p>Bize soracağı bağlanmak istediğinize emin misiniz yazısına <em>yes</em> yazarak olumlu cevap veriyoruz ve doğrudan <em>bandit14</em> kullanıcısı olarak bağlanmış oluyoruz.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/132579190-6530c595-cffc-4d32-bd65-38290aee9712.png#center alt=ep13-2></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-14--15>Bölüm 14 → 15</h3>
+<p><strong>İpucu:</strong> Bir sonraki bayrağı elde etmek için bu bölümün şifresini <em>localhost port 3000</em>&lsquo;e göndermemiz lazım.</p>
+<p>Bunun için <em>nc</em> komutunu kullanarak <em>localhost 3000 portuna</em> bağlanıyoruz. <code>nc localhost 3000</code> komutu ile bağlanarak şu anki bölümün şifresini <em>(4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e)</em> yapıştırıyoruz ve <em>enter</em> tuşuna basıyoruz.
+<img src=https://user-images.githubusercontent.com/878595/133088336-dbcb05d7-97c9-49d6-b9ef-1846910772c7.jpg#center alt=e14></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>BfMYroe26WYalil77FoDi9qh59eK5xNr</em></p>
+</blockquote>
+<br>
+<hr>
+<h4>Bu Serideki Yazılar</h4>
+<ul>
+<li><a href=/post/ctf-overthewire-bandit-cozumleri-1-15/>CTF - OverTheWire Bandit Çözümleri 1-15</a></li>
+</ul>
+<hr>
+<br></div>
+<div class=post-footer>
+<div class=info>
+<span class=separator><a class=category href=/categories/ctf/>CTF</a></span>
+<span class=separator><a class=tag href=/tags/ctf/>CTF</a><a class=tag href=/tags/overthewire/>OverTheWire</a><a class=tag href=/tags/bandit/>Bandit</a><a class=tag href=/tags/%C3%A7%C3%B6z%C3%BCm/>Çözüm</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div><footer class="footer footer--base">
+<div class=by_farbox>
+<ul class=footer__list>
+<li class=footer__item>
+&copy;
+Can Torun
+2021
+</li>
+<li class=footer__item>
+<a href=/imprint/ title>
+Yasal
+</a>
+</li>
+</ul>
+</div>
+</footer>
+<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-18600398-4','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZHFCQ4QJY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-TZHFCQ4QJY')</script>
+</body>
+</html>
