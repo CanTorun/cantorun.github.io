@@ -1,0 +1,435 @@
+<!doctype html><html dir=ltr lang=tr data-theme><head>
+<title>
+Can Torun
+|
+CTF - OverTheWire Bandit Çözümleri 15-26
+</title>
+<meta charset=utf-8><meta name=generator content="Hugo 0.88.1"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name=description content="
+      OverTheWire Bandit CTF'in çözümleri 15 den 26'ya kadar.
+
+
+    ">
+<meta name=google-site-verification content="vSNQS4nppjlWFumdVgjT2zn7YQDYXNwtcaYCgLgcS5w">
+<link rel=stylesheet href=/css/main.min.d04db3d283a8902645b5154500a524df7225f59e7610e3dacb52669d842a7d5f.css integrity="sha256-0E2z0oOokCZFtRVFAKUk33Il9Z52EOPay1JmnYQqfV8=" crossorigin=anonymous type=text/css>
+<link rel=stylesheet href=/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS+yuWSR4=" crossorigin=anonymous type=text/css>
+<link rel=stylesheet href=/css/custom.min.ba36a7508da341b7f2b3ac428d3fa2b6da9f215959bb3cfad5089b4816bd394d.css integrity="sha256-ujanUI2jQbfys6xCjT+ittqfIVlZuzz61QibSBa9OU0=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous>
+<link rel="shortcut icon" href=/favicons/favicon.ico type=image/x-icon>
+<link rel=apple-touch-icon sizes=180x180 href=/favicons/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicons/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicons/favicon-16x16.png>
+<link rel=canonical href=/post/ctf-overthewire-bandit-cozumleri-15-26/>
+<script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
+<script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://cantorun.github.io/images/site-feature-image.png">
+<meta name=twitter:title content="CTF - OverTheWire Bandit Çözümleri 15-26">
+<meta name=twitter:description content="OverTheWire Bandit CTF'in çözümleri 15 den 26'ya kadar.">
+<meta property="og:title" content="CTF - OverTheWire Bandit Çözümleri 15-26">
+<meta property="og:description" content="OverTheWire Bandit CTF'in çözümleri 15 den 26'ya kadar.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cantorun.github.io/post/ctf-overthewire-bandit-cozumleri-15-26/"><meta property="og:image" content="https://cantorun.github.io/images/site-feature-image.png"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-09-21T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-09-21T00:00:00+00:00"><meta property="og:site_name" content="Can Torun">
+<meta property="og:see_also" content="https://cantorun.github.io/post/ctf-overthewire-bandit-cozumleri-1-15/">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"post","name":"CTF - OverTheWire Bandit Çözümleri 15-26","headline":"CTF - OverTheWire Bandit Çözümleri 15-26","alternativeHeadline":"","description":"
+      OverTheWire Bandit CTF\u0027in çözümleri 15 den 26\u0027ya kadar.
+
+
+    ","inLanguage":"tr","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cantorun.github.io\/post\/ctf-overthewire-bandit-cozumleri-15-26\/"},"author":{"@type":"Person","name":"Can Torun"},"creator":{"@type":"Person","name":"Can Torun"},"accountablePerson":{"@type":"Person","name":"Can Torun"},"copyrightHolder":{"@type":"Person","name":"Can Torun"},"copyrightYear":"2021","dateCreated":"2021-09-21T00:00:00.00Z","datePublished":"2021-09-21T00:00:00.00Z","dateModified":"2021-09-21T00:00:00.00Z","publisher":{"@type":"Organization","name":"Can Torun","url":"https://cantorun.github.io","logo":{"@type":"ImageObject","url":"https:\/\/cantorun.github.io\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":["https://cantorun.github.io/images/site-feature-image.png"],"url":"https:\/\/cantorun.github.io\/post\/ctf-overthewire-bandit-cozumleri-15-26\/","wordCount":"1447","genre":["CTF"],"keywords":["CTF","OverTheWire","Bandit","Çözüm"]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9557042978562256" crossorigin=anonymous></script>
+</head>
+<body>
+<header><div class=page-top>
+<a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+</a>
+<nav>
+<ul class=nav__list id=navMenu>
+<div class=nav__links>
+<li>
+<a href=/ title>Anasayfa</a>
+</li>
+<li>
+<a href=/post/ title>Yazılar</a>
+</li>
+<li>
+<a href=/about/ title>Hakkımda</a>
+</li>
+</div>
+<li>
+<a class=theme-switch title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<div class=wrapper>
+<aside><div class=sidebar>
+<div class=sidebar__content>
+<div class=logo-title>
+<div class=title>
+<img src=/images/avatar.jpg alt="profile picture">
+<h3 title><a href=/>Can Torun</a></h3>
+<div class=description>
+<p>#!/bin/sh<br> /home/tr<br> </p>
+</div>
+</div>
+</div>
+<ul class=social-links>
+<li>
+<a href=https://github.com/cantorun/ rel=me aria-label=GitHub>
+<i class="fab fa-github fa-2x" aria-hidden=true></i>
+</a>
+</li>
+<li>
+<a href=https://www.instagram.com/ rel=me aria-label=instagram>
+<i class="fab fa-instagram fa-2x" aria-hidden=true></i>
+</a>
+</li>
+</ul>
+</div><footer class="footer footer--sidebar">
+<div class=by_farbox>
+<ul class=footer__list>
+<li class=footer__item>
+&copy;
+Can Torun
+2021
+</li>
+<li class=footer__item>
+<a href=/imprint/ title>
+Yasal
+</a>
+</li>
+</ul>
+</div>
+</footer>
+<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-18600398-4','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZHFCQ4QJY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-TZHFCQ4QJY')</script>
+</div>
+</aside>
+<main>
+<div class=autopagerize_page_element>
+<div class=content>
+<div class="post
+animated fadeInDown">
+<div class=post-content>
+<img class=post-thumbnail src=/images/thumbs/thumb-bandit15-26.jpg alt="Thumbnail image">
+<div class=post-title>
+<h1>CTF - OverTheWire Bandit Çözümleri 15-26</h1>
+<div class=info>
+<em class="fas fa-calendar-day"></em>
+<span class=date>
+21/9/2021
+</span>
+<em class="fas fa-stopwatch"></em>
+<span class=reading-time>7 dakikalık okuma süresi</span>
+</div>
+</div><br>
+<hr>
+<h3>İçindekiler</h3>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#bölüm-15--16>Bölüm 15 → 16</a></li>
+<li><a href=#bölüm-16--17>Bölüm 16 → 17</a></li>
+<li><a href=#bölüm-17--18>Bölüm 17 → 18</a></li>
+<li><a href=#bölüm-18--19>Bölüm 18 → 19</a></li>
+<li><a href=#bölüm-19--20>Bölüm 19 → 20</a></li>
+<li><a href=#bölüm-20--21>Bölüm 20 → 21</a></li>
+<li><a href=#bölüm-21--22>Bölüm 21 → 22</a></li>
+<li><a href=#bölüm-22--23>Bölüm 22 → 23</a></li>
+<li><a href=#bölüm-23--24>Bölüm 23 → 24</a></li>
+<li><a href=#bölüm-24--25>Bölüm 24 → 25</a></li>
+<li><a href=#bölüm-25--26>Bölüm 25 → 26</a></li>
+<li><a href=#bölüm-26--27>Bölüm 26 → 27</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<hr>
+<br><p><a href=https://overthewire.org/wargames/>OverTheWire</a> Bandit CTF&rsquo;ine kaldığımız yerden devam ediyoruz. Bölüm 15 ve 26 arasını kapsayan bu yazıda sonlara doğru epey yıprandım. Gerek aşırı yıpranmam gerekse konun başka bir yere gitmesi nedeniyle iki parça olarak düşündüğüm bu yazı dizisini üç parça halinde yazmaya karar verdim. 27&rsquo;den 34&rsquo;e kadar olan bölümleri bir sonraki yazıya bırakıyorum. İyi eğlenceler..</p>
+<hr>
+<h3 id=bölüm-15--16>Bölüm 15 → 16</h3>
+<p><strong>İpucu:</strong> Localhost port <em>30001</em>&lsquo;e bölümün şifresini <em>ssl</em> ile şifrelenmiş şekilde göndermemiz gerekriği belirtilmiş.</p>
+<p>Bu sefer <em>ssl</em> bağlantısı kurmak için <em>openssl</em> kullanacağız. Bağlantımızı <code>openssl s_client -connect localhost:30001</code> komutu ile başlatıyoruz.
+<img src=https://user-images.githubusercontent.com/878595/133095200-56e75f18-563b-497f-b053-0b47b95cd1c7.jpg#center alt=e15-1></p>
+<p>Daha sonra şifreyi yapıştırarak <em>enter</em> tuşuna basıyoruz ve sunucu cevap olarak bayrağı döndürüyor.
+<img src=https://user-images.githubusercontent.com/878595/133095311-1dfb50f8-79d9-42e5-9e49-3302d4815fb7.jpg#center alt=e15-2></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>cluFn7wTiGryunymYOu4RcffSxQluehd</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-16--17>Bölüm 16 → 17</h3>
+<p><strong>İpucu:</strong> Bu bölümün şifresini <em>localhost</em> üzerinde <strong>31000</strong> ve <strong>32000</strong> aralığında <strong>ssl</strong> ile şifreli bir sunucuya göndermemiz gerekiyor. Veriyi göndermemiz gereken servis haricindeki bütün servisler bize gönderdiğimiz veriyi cevap olarak dönüyor <em>(echo)</em>.</p>
+<p><strong>1. Adım</strong> ilgili aralıkta hizmet veren <em>portları</em> taramamız lazım bunun içi <em>nmap</em> aracından faydalanacağız.</p>
+<p><code>nmap -sV localhost -p31000-32000</code></p>
+<ul>
+<li><code>-sV</code> parametresi ile servis ve versiyon bilgilerini de araştırıyoruz.</li>
+<li><code>-p31000-32000</code> ile tarayacağımız <em>port</em> aralığını belirttik.
+<img src=https://user-images.githubusercontent.com/878595/133403019-0262b24e-02a3-437c-9a96-2d014e629f00.jpg#center alt=ep16-1></li>
+</ul>
+<p>Çıktıları incelediğimizde <em>echo</em> yazan <em>portlar</em> ipucunda bahsettiğim gibi gönderdiğimiz isteği aynı şekilde cevap olarak gönderiyor. Kırmızı ile işaretli <em>31790</em> portu ise <strong>ssl</strong> kullanıyor ve <strong>bilinmeyen bir işleve</strong> sahip.</p>
+<p><strong>2. Adım:</strong> <em>Openssl</em> aracı ile ilgili hizmete bağlanarak şifreyi <em>(cluFn7wTiGryunymYOu4RcffSxQluehd)</em> gönderelim.
+<code>openssl s_client -connect localhost:31790</code>
+<img src=https://user-images.githubusercontent.com/878595/133418012-ca2ebc59-fc31-4341-9331-0a888cc01fbd.jpg#center alt=ep16-2></p>
+<p>Doğru <em>portu</em> bulduk servis bize cevap olarak bir <em>RSA Private key</em> döndürdü.</p>
+<blockquote>
+<p>&mdash;&ndash;BEGIN RSA PRIVATE KEY&mdash;&ndash;
+MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ
+imZzeyGC0gtZPGujUSxiJSWI/oTqexh+cAMTSMlOJf7+BrJObArnxd9Y7YT2bRPQ
+Ja6Lzb558YW3FZl87ORiO+rW4LCDCNd2lUvLE/GL2GWyuKN0K5iCd5TbtJzEkQTu
+DSt2mcNn4rhAL+JFr56o4T6z8WWAW18BR6yGrMq7Q/kALHYW3OekePQAzL0VUYbW
+JGTi65CxbCnzc/w4+mqQyvmzpWtMAzJTzAzQxNbkR2MBGySxDLrjg0LWN6sK7wNX
+x0YVztz/zbIkPjfkU1jHS+9EbVNj+D1XFOJuaQIDAQABAoIBABagpxpM1aoLWfvD
+KHcj10nqcoBc4oE11aFYQwik7xfW+24pRNuDE6SFthOar69jp5RlLwD1NhPx3iBl
+J9nOM8OJ0VToum43UOS8YxF8WwhXriYGnc1sskbwpXOUDc9uX4+UESzH22P29ovd
+d8WErY0gPxun8pbJLmxkAtWNhpMvfe0050vk9TL5wqbu9AlbssgTcCXkMQnPw9nC
+YNN6DDP2lbcBrvgT9YCNL6C+ZKufD52yOQ9qOkwFTEQpjtF4uNtJom+asvlpmS8A
+vLY9r60wYSvmZhNqBUrj7lyCtXMIu1kkd4w7F77k+DjHoAXyxcUp1DGL51sOmama
++TOWWgECgYEA8JtPxP0GRJ+IQkX262jM3dEIkza8ky5moIwUqYdsx0NxHgRRhORT
+8c8hAuRBb2G82so8vUHk/fur85OEfc9TncnCY2crpoqsghifKLxrLgtT+qDpfZnx
+SatLdt8GfQ85yA7hnWWJ2MxF3NaeSDm75Lsm+tBbAiyc9P2jGRNtMSkCgYEAypHd
+HCctNi/FwjulhttFx/rHYKhLidZDFYeiE/v45bN4yFm8x7R/b0iE7KaszX+Exdvt
+SghaTdcG0Knyw1bpJVyusavPzpaJMjdJ6tcFhVAbAjm7enCIvGCSx+X3l5SiWg0A
+R57hJglezIiVjv3aGwHwvlZvtszK6zV6oXFAu0ECgYAbjo46T4hyP5tJi93V5HDi
+Ttiek7xRVxUl+iU7rWkGAXFpMLFteQEsRr7PJ/lemmEY5eTDAFMLy9FL2m9oQWCg
+R8VdwSk8r9FGLS+9aKcV5PI/WEKlwgXinB3OhYimtiG2Cg5JCqIZFHxD6MjEGOiu
+L8ktHMPvodBwNsSBULpG0QKBgBAplTfC1HOnWiMGOU3KPwYWt0O6CdTkmJOmL8Ni
+blh9elyZ9FsGxsgtRBXRsqXuz7wtsQAgLHxbdLq/ZJQ7YfzOKU4ZxEnabvXnvWkU
+YOdjHdSOoKvDQNWu6ucyLRAWFuISeXw9a/9p7ftpxm0TSgyvmfLF2MIAEwyzRqaM
+77pBAoGAMmjmIJdjp+Ez8duyn3ieo36yrttF5NSsJLAbxFpdlc1gvtGCWW+9Cq0b
+dxviW8+TFVEBl1O4f7HVm6EpTscdDxU+bCXWkfjuRb7Dy9GOtt9JPsX8MBTakzh3
+vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
+&mdash;&ndash;END RSA PRIVATE KEY&mdash;&ndash;</p>
+</blockquote>
+<p><strong>3. Adım:</strong> <em>SSH</em> anahtarımızı bir dosyaya kaydetmemiz lazım. Ancak ev dizini içerisinde yazma hakkımız yok. Bu nedenle <em>/tmp</em> altında <em>ct</em> adında bir dizin oluşturup burada çalışacağım.</p>
+<ul>
+<li><code>mkdir /tmp/ct</code></li>
+<li><code>cd /tmp/ct</code></li>
+</ul>
+<p>Daha sonra herhangi bir editör yardımı ile <em>anahtar.private</em> adında bir dosya oluşturuyorum. Ben editör olarak <em>nano</em> tercih ettim. İçerisine anahtar dizimizi yapıştırarak kaydediyoruz.
+<code>nano anahtar.private</code>
+<img src=https://user-images.githubusercontent.com/878595/133447238-96ac4f8a-bc8b-458d-ad9e-f8952292d5b5.jpg#center alt=ep16-3></p>
+<p><strong>4. Adım:</strong> Son olarak <em>ssh</em> ile bir sonraki bölüme bağlanıyoruz.
+<code>ssh -i anahtar.private bandit17@localhost</code>
+<img src=https://user-images.githubusercontent.com/878595/133449363-76391800-01d6-43bd-8bde-f0926360adba.jpg#center alt=ep16-4></p>
+<p>Bir sonraki bölüme bağlanmış olduk daha önceki bölümlerden <em>bandit</em> oyununda her bölüme ait şifrerin <em>/etc/bandit_pass/</em> dizini altında yer aldığını biliyoruz. <code>cat /etc/bandit_pass/bandit17</code> komutu ile 17. bölümün şifresini ekrana bastırıyoruz. Böylece bir daha bu bölüme bağlanmamız gerektiğinde yukarıdaki adımları uygulamayacağız.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/133450030-35ce2416-db56-4c4b-9e8a-f5ccd9ce2d27.jpg#center alt=ep16-5></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn</em></p>
+</blockquote>
+<h3 id=bölüm-17--18>Bölüm 17 → 18</h3>
+<p><strong>İpucu:</strong> Ev dizininde <em>passwords.old</em> ve <em>passwords.new</em> adında iki dosya olduğu ve şifremiz ikinci dosyada değişen satır olduğu belirtilmiş.</p>
+<p>Değişen satırı bulmak için <em>diff</em> komutunu kullanacağız. <em>Diff</em> komutuna ilk parametre olarak <em>passwords.old</em> dosyasını, ikinci parametre olarak ise <em>passwords.new</em> dosyasını veriyoruz.</p>
+<p><code>diff passwords.old passwords.new</code>
+<img src=https://user-images.githubusercontent.com/878595/133936557-c01491b6-51cf-409a-b9be-0435db6e1418.png#center alt=ep17></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd</em></p>
+<p>Not: Bölüm 18&rsquo;e bağlanmaya çalıştığınızda başarısız olursanız konu 18. bölüm ile ilgili. Bölüm 18&rsquo;i okumaya devam edin.</p>
+</blockquote>
+<hr>
+<h3 id=bölüm-18--19>Bölüm 18 → 19</h3>
+<p><strong>İpucu:</strong> Şifrenin ev dizini altında <em>readme</em> dosyasının içeriğinde olduğu ancak <em>.bashrc</em> içersine yazılmış bir kodun sunucu ile olan bağlantımızı kestiği belirtilmiş.</p>
+<p><em>.bashrc</em> devreye girmeden komut çalıştırmak için <em>ssh</em>&lsquo;a çalıştırmak istediğimiz komutu parametre olarak yazıyoruz.</p>
+<p><code>ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"</code></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x</em></p>
+</blockquote>
+<h3 id=bölüm-19--20>Bölüm 19 → 20</h3>
+<p><strong>İpucu:</strong> Ev dizini içerisinde <em>setuid</em> görevi gören bir çalıştırılabilir dosya olduğu ve şifrenin her zamanki gibi <em>/etc/bandit_pass</em> içerisinde yer aldığı belirtilmiş.</p>
+<p><em>ls</em> ile baktığımız zaman <em>bandit20-do</em> adında bir çalıştırılabilir dosya olduğunu görüyoruz. Kısaca <em>sudo</em> benzeri bir iş yaparak herhangi bir komutu <em>bandit20</em> kullanıcısı olarak çalıştırmamıza olanak sağlıyor.</p>
+<p><code>./bandit20-do cat /etc/bandit_pass/bandit20</code>
+<img src=https://user-images.githubusercontent.com/878595/133937319-84174737-30ec-4eef-bf18-ace3ff7995c9.png#center alt=ep19></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>GbKksEFF4yrVs6il55v6gwY5aVje5f0j</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-20--21>Bölüm 20 → 21</h3>
+<p><strong>İpucu:</strong> Ev dizinin yine bir <em>setuid</em> çalıştırılabilir dosyası olduğu, bu dosyanın komut satırından parametre olarak belirtilen porta bağlanarak sunucudan gelen cevabı dinlediğini ve gelen cevap bir önceki bölümün şifresine eşit ise bir sonraki bölümün şifresini sunucuya gönderdiği belirtilmiş.</p>
+<p>İpucundan yola çıkarak <em>suconnect</em> adlı dosyanın bağlanabileceği ve istemciye bulunduğumuz bölümüz şifresini gönderecek bir sunucu oluşturmamız gerekiyor. <em>nc</em> komutuna <em>-vlp</em> parametreleri ve bir port numarası vererek belirttiğimiz portu dinlemesini sağlayabiliriz. Daha sonrasında nc komutuna <em>echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j</em> ile geçerli bölümün şifresini yönledirebiliriz.</p>
+<p><code>echo GbKksEFF4yrVs6il55v6gwY5aVje5f0j | nc -vlp 12345</code>
+<img src=https://user-images.githubusercontent.com/878595/133938006-c3b33cc2-c7ff-4594-886d-d44783b9fa72.png#center alt=Screenshot20-1></p>
+<p>Bu noktada ayrı bir terminal üzerinden ikinci bir ssh bağlantısı kurarak bölüme tekrar bağlanmamız ve <code>./suconnect 12345</code> komutunu çalıştırmamız lazım.<em>(Eski terminali kapatmayınız.)</em>
+<img src=https://user-images.githubusercontent.com/878595/133938045-64d14e30-bd85-421a-aa18-eed1b1dea6bb.png#center alt=Screenshot20-2></p>
+<p>Şifrenin sunucuya gönderildiğini görüyoruz. İlk bağlantıyı kurduğumuz pencereye dönelim ve bir sonraki bölümün şifresini alalım.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/133938094-1c932db6-be65-4cf5-9981-17ce6d01f63c.png#center alt=Screenshot20-3></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-21--22>Bölüm 21 → 22</h3>
+<p><strong>İpucu:</strong> <em>Cron</em> dosyaları ile bir takım dosyaların otomatik olarak çalıştırıldığı ve <em>/etc/cron.d</em> altındaki dosyaları kontrol etmemiz gerektiği belirtilmiş.</p>
+<p><em>Cat *</em> ile <em>/etc/cron.d/</em> altındaki bütün dosyaların içeriğini ekrana yazdıralım. Çalışmaları zamanlanmış <em>sh scriptlerinin</em> içeriğine tek tek bakalım.
+<img src=https://user-images.githubusercontent.com/878595/133938482-c963e7be-c29c-43d5-bd5f-962426b0d2ff.png#center alt=ep21></p>
+<p><em>/usr/bin/cronjob_bandit22.sh</em> adlı betik <em>/etc/bandit_pass/bandit22</em> dosyasının içeriğini <em>/tmp</em> altında <em>t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv</em> adlı dosyaya yazıyor. Dosyanın içeriğini yazdırıyoruz.</p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-22--23>Bölüm 22 → 23</h3>
+<p><strong>İpucu:</strong> Geçen bölümle aynı ipucu verilmiş. Ek olarak başka insanların yazdığı bash scriptlerini okumanın faydalı olduğu belirtilmiş.</p>
+<p>bir sonraki zamanlanmış scriptine <em>(cronjob_bandit23.sh)</em> bakalım.
+<img src=https://user-images.githubusercontent.com/878595/133939157-8c44d80f-5d54-4fd8-99cd-2ca67e849303.png#center alt=ep22></p>
+<p><code>mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)</code> Bu satırda <em>I am user</em> ile geçerli kullanıcı adı harmanlanarak <em>hashlenmiş</em>. Bu <em>hash</em> ise <em>/tmp</em> altında dosya adı olarak kullanılmış ve bölümün şifresi kopyalanmış.</p>
+<p><code>echo I am user bandit23 | md5sum | cut -d ' ' -f 1</code> komutunu çalıştırarak aynı hash&rsquo;e ulaşabilir ve dosyanın adını öğrenebiliriz.
+<img src=https://user-images.githubusercontent.com/878595/133939138-49871482-43bf-4cd4-98ce-9ec815c6ec2f.png#center alt=ep22-2></p>
+<p>Dosyayı yazdıralım.
+<img src=https://user-images.githubusercontent.com/878595/133939314-2bce7939-0496-4395-a046-bac714bfece0.png#center alt=ep22-3></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-23--24>Bölüm 23 → 24</h3>
+<p><strong>İpucu:</strong> Yine önceki bölümlerle aynı şeyler yazılmış. Ek olarak:</p>
+<ul>
+<li><strong>Not:</strong> İlk defa <em>script</em> yazacağımız ve bu yüzden bu bölümü tamamlayınca gurur duymamız gerektiği belirtilmiş :D.</li>
+<li><strong>Not-2:</strong> Yazdığımız <em>scriptler</em> çalışınca silindiğinden bahsedilmiş bu yüzden yazdığımız <em>scriptin</em> yedeğini almamız tavsiye edilmiş.</li>
+</ul>
+<p>Aynı şekilde <em>cron</em> iş dosyalarını inceleyerek başlıyorum.
+<img src=https://user-images.githubusercontent.com/878595/133939989-e4da8cc4-730a-4594-aeb9-b0ddcb429d27.png#center alt=ep23>
+<em>cronjob_bandit24.sh</em> dosyasını değerlendirdiğimizde:</p>
+<ol>
+<li><code>/var/spool/$myname(bandit24)</code> altında bulunan bütün scriptlerin çalıştırıldığını,</li>
+<li><em>timeout</em> ile komutu ile 60 saniyede bir bu işlemin tekrarlandığını</li>
+</ol>
+<p>görüyoruz. Önce <em>/tmp</em> altında kendime bir çalışma alanı ayarlıyorum.
+<img src=https://user-images.githubusercontent.com/878595/133940132-443b219d-950f-49e7-8f3d-d055cb04d503.png#center alt=ep23-2></p>
+<ul>
+<li><em>mkdir</em> ile bir dizin açıyorum ve izinleri <em>777</em> ile herkes tarafından okunabilir ve yazılabilir yapıyorum.</li>
+<li><em>vim</em> kullanarak (siz <em>nano</em> da tercih edebilirsiniz) <em>payload.sh</em> adlı bir script oluşturuyorum ve içerisine <em>/etc/bandit_pass/bandit24</em> dosyasının içeriğini kendi klasörüme kopyalayan bir script yazıyorum:</li>
+</ul>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=cp>#!/bin/sh
+</span><span class=cp></span>cat /etc/bandit_pass/bandit24 &gt; /tmp/payload/pass
+</code></pre></div><ul>
+<li>Dosyanın herkes tarafından okunabilir, yazılabilir ve çalıştırılabilir olduğuna emin oluyorum.</li>
+<li>Son olarak dosyayı <em>/var/spool/bandit24</em> dizini altına kopyalıyorum.</li>
+</ul>
+<p>Bu noktadan sonra 60 saniyelik <em>timeout</em> zamanın dolmasını bekliyorum. Arada <em>ls</em> ile kontrol ediyorum.
+<img src=https://user-images.githubusercontent.com/878595/133940340-d8b3ee74-590b-4895-a8b5-3698ccb25652.png#center alt=ep23-3></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ</em></p>
+</blockquote>
+<p><em>Not: Artık gurur duyabiliriz :)</em></p>
+<hr>
+<h3 id=bölüm-24--25>Bölüm 24 → 25</h3>
+<p><strong>İpucu:</strong></p>
+<ul>
+<li>Port 30002 üzerinde dinleme yapan bir servisin olduğu</li>
+<li>Servisin geçerli bölüm şifresi ve doğru pin sağlanan isteğe sonraki bölümün şifresini döneceği</li>
+<li>Pin kodunun 4 haneli olduğu</li>
+<li>Yalnızca <a href=https://tr.wikipedia.org/wiki/Kaba_kuvvet_sald%C4%B1r%C4%B1s%C4%B1>brute force</a> ile kırılabileceği belirtilmiş.</li>
+</ul>
+<p>Öncelikle ilgili servise bir istekte bulunalım.
+<img src=https://user-images.githubusercontent.com/878595/133942011-c18d4260-439c-4194-b63a-eaeedcf73a74.png#center alt=ep24-1>
+Bağlantı başlayınca sunucu bize <em>[Bandit24-Şifrei PIN]</em> şeklinde bir istek beklediğini belirtiyor.</p>
+<p>Bandit24 kullanıcısnın şifresini 0 dan 999&rsquo;a kadar olan pin kodlarını sırayla ekrana yazacak bir script yazalım. <em>/tmp</em> dizinin altında kendime bir çalışma alanı ayarlıyorum.
+<img src=https://user-images.githubusercontent.com/878595/133942164-9d2533ec-6624-44b6-a0c4-ec1eda4f6fa8.png#center alt=ep24-2></p>
+<ul>
+<li><em>brute.sh</em> adında bir dosya oluşturup <em>chmod +x</em> ile çalışma izni veriyorum.</li>
+<li>basit bir döngü ile <em>echo [şifre] $i</em> satırında çıktı üretiyorum</li>
+</ul>
+<p>Bu noktadan sonra</p>
+<ul>
+<li><code>./brute.sh | nc localhost 30002</code> ile çıktıları sunucuya iletiyorum</li>
+<li>Son olarak <em>grep</em> komutu ile password içeren satırları yakalıyorum.
+<img src=https://user-images.githubusercontent.com/878595/133942285-032e831c-0c2a-4870-a59c-08552b6cd137.png#center alt=ep24-3></li>
+</ul>
+<blockquote>
+<p><strong>Şifre:</strong> <em>uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-25--26>Bölüm 25 → 26</h3>
+<p><strong>İpucu:</strong> bandit25&rsquo;ten bandit26&rsquo;ya geçişin kolay olduğu, bandit26 kullanıcısı için ön tanımlı kabuğun <em>/bin/bash</em> olmadığı belirtilmiş. Hangi kabuk olduğu, nasıl çalıştığını öğrenmemiz ve dışına çıkmamız için bir yol bulmamız gerektiği tavsiye edilmiş.</p>
+<p><strong>Not:</strong> Bu ve bir sonraki bölüm kişisel olarak sıkıldığım, sinir krizleri geçirdiğim ayrıca garip bir şekilde keyif aldığım bölümler oldu.</p>
+<p><em>Ls</em> ile kontrol ettiğimiz zaman ev dizininde <em>.sshkey</em> dosyası olduğunu görüyoruz. Ancak <code>ssh -i bandit26.sshkey bandit26@localhost</code> ile bağlanmaya çalıştığımızda bağlantımız otomatik olarak kapanıyor.
+<img src=https://user-images.githubusercontent.com/878595/134060587-afb61c1b-939e-47b5-810f-3c81ffa1e101.png#center alt=ep25></p>
+<p>Bandit26 kullanıcsının hangi kabukta işlem yaptığını görebilmek adına <em>/etc/passwd</em> dosyasına bakıyorum
+<img src=https://user-images.githubusercontent.com/878595/134060822-a45cdf1b-ad31-4c81-acd7-08ce9baf98a4.png#center alt=ep25-2></p>
+<p>Kabuk olarak <em>/usr/bin/showtext</em> dosyasının tanımlı olduğunu görüyoruz. İlgili dosyaya bakalım
+<img src=https://user-images.githubusercontent.com/878595/134061200-9a9fc1b6-bb5f-4844-95c0-edcf854a3bda.png#center alt=ep25-3></p>
+<blockquote>
+<p><strong>Not 2:</strong> Bu noktada az kafayı yemedim. Bu arada text.txt dosyasını okuma iznimiz yok. Bir noktada işin içinden çıkamayacağımı düşünsemde bir şekilde bir açık olduğunu ve bir sonraki bölüme geçmenin imkansız olmadığını biliyoruz. Bir kaç kere bilgisayar başından kalkıp oturmamın ve satırları tek tek araştırmamın ardından çözüme ulaştım.</p>
+</blockquote>
+<p>Satırları tek tek inceleyelim</p>
+<ul>
+<li><code>export TERM=linux</code> Terminal emülatörünü linux olarak ayarlıyor.</li>
+<li><code>more ~/text.</code> <strong>More</strong> komutu ile text dosyasını ekrana basıyor.</li>
+<li><code>exit 0</code> bağlantımızı sonlandıran komut.</li>
+</ul>
+<p>Delirme aşamalarını geçtikten sonra <em>more</em> komutunun yardım sayfalarını incelediğimde <em>&lsquo;v&rsquo;</em> tuşu ile editöre girebileceğimi gördüm. Öncelikle terminalin boyutunu küçültmem gerekti ki <em>more</em> komutu devreye girsin. <em>&lsquo;V&rsquo;</em> ile editörü çalıştırdığımda ön tanımlı editörün <em>vi</em> olduğunu(<em>man</em> sayfalarında da belirtildiği üzere) görüyoruz. Bu noktada işler çözülmeye başlıyor. <em>More</em> komutu hala devam ettiği için <em>exit</em> komutu henüz çalışmış değil ve subprocess olarak çalışan vi&rsquo;nin içerisindeyiz. Vi&rsquo;nin komut çalıştırma özelliğini kullanarak başka bir <em>subprocess</em> çalıştırabilirz. Biraz karışık olduğunu biliyorum.
+<code>more ~/text.txt > vi > bizim komutumuz</code> şeklinde şematize edebilirim sanırım.</p>
+<p><strong>1. Adım</strong> Terminalimizi küçültüyoruz ve ssh bağlantımızı başlatıyoruz. Birkaç deneme gerektirebilir aşırı küçültmeyin. <em>More</em> devreye girecek kadar küçültmeniz yeterli. <em>More</em> devreye girince ekranı tekrar büyütebilirsiniz.
+<img src=https://user-images.githubusercontent.com/878595/134065410-009d6d91-b830-4e39-955b-4aadeb051a1c.png#center alt=ep25-4></p>
+<p><strong>2. Adım</strong> &lsquo;v&rsquo; Tuşuna basarak vi&rsquo;yi açıyoruz.
+<strong>3. Adım</strong> İki nokta üst üste yazarak vi&rsquo;yi komut moduna alıyoruz ve sırasıyla</p>
+<ul>
+<li><code>:set shell=/bin/bash</code> <img src=https://user-images.githubusercontent.com/878595/134065541-d90da25b-986f-4a43-8961-3d9dcc0cebaa.png#center alt=ep25-5></li>
+<li><code>:shell</code> <img src=https://user-images.githubusercontent.com/878595/134065557-4751df8c-6c44-4c2b-9c83-af108af0e2f7.png#center alt=ep25-6></li>
+</ul>
+<p>komutlarını uyguluyoruz. Ve böylece bash kabuğuna düştük.
+<img src=https://user-images.githubusercontent.com/878595/134065566-1501af61-697f-468c-82c5-8fb3a5bf4d5d.png#center alt=ep25-7></p>
+<p>Hemen bandit26 kullanıcısının şifresini alalım ve ev dizininde neler var diye bakalım. bandit27-do adlı bir dosya var böylece bir sonraki bölümü de çözmüş olduk.
+<img src=https://user-images.githubusercontent.com/878595/134066288-61641202-92af-4ef6-9e19-6d1ee5e1a658.png#center alt=ep25-8></p>
+<blockquote>
+<p><strong>Bölüm 26 Şifresi:</strong> <em>5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z</em>
+<strong>Bölüm 27 Şifresi:</strong> <em>3ba3118a22e93127a4ed485be72ef5ea</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-26--27>Bölüm 26 → 27</h3>
+<p>Bölümün çözümü Bölüm 25 → 26&rsquo;da anlatıldı.</p>
+<br>
+<hr>
+<h4>Bu Serideki Yazılar</h4>
+<ul>
+<li><a href=/post/ctf-overthewire-bandit-cozumleri-15-26/>CTF - OverTheWire Bandit Çözümleri 15-26</a></li>
+<li><a href=/post/ctf-overthewire-bandit-cozumleri-1-15/>CTF - OverTheWire Bandit Çözümleri 1-15</a></li>
+</ul>
+<hr>
+<br></div>
+<div class=post-footer>
+<div class=info>
+<span class=separator><a class=category href=/categories/ctf/>CTF</a></span>
+<span class=separator><a class=tag href=/tags/ctf/>CTF</a><a class=tag href=/tags/overthewire/>OverTheWire</a><a class=tag href=/tags/bandit/>Bandit</a><a class=tag href=/tags/%C3%A7%C3%B6z%C3%BCm/>Çözüm</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div><footer class="footer footer--base">
+<div class=by_farbox>
+<ul class=footer__list>
+<li class=footer__item>
+&copy;
+Can Torun
+2021
+</li>
+<li class=footer__item>
+<a href=/imprint/ title>
+Yasal
+</a>
+</li>
+</ul>
+</div>
+</footer>
+<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-18600398-4','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZHFCQ4QJY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-TZHFCQ4QJY')</script>
+</body>
+</html>
