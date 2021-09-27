@@ -1,0 +1,283 @@
+<!doctype html><html dir=ltr lang=tr data-theme><head>
+<title>
+Can Torun
+|
+CTF - OverTheWire Bandit Çözümleri 26-33 - SON
+</title>
+<meta charset=utf-8><meta name=generator content="Hugo 0.88.1"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name=description content="
+      OverTheWire Bandit CTF'in çözümleri 26'dan 33'e kadar.
+
+
+    ">
+<meta name=google-site-verification content="vSNQS4nppjlWFumdVgjT2zn7YQDYXNwtcaYCgLgcS5w">
+<link rel=stylesheet href=/css/main.min.d04db3d283a8902645b5154500a524df7225f59e7610e3dacb52669d842a7d5f.css integrity="sha256-0E2z0oOokCZFtRVFAKUk33Il9Z52EOPay1JmnYQqfV8=" crossorigin=anonymous type=text/css>
+<link rel=stylesheet href=/css/markupHighlight.min.f798cbda9aaa38f89eb38be6414bd082cfd71a6780375cbf67b6d2fb2b96491e.css integrity="sha256-95jL2pqqOPies4vmQUvQgs/XGmeAN1y/Z7bS+yuWSR4=" crossorigin=anonymous type=text/css>
+<link rel=stylesheet href=/css/custom.min.ba36a7508da341b7f2b3ac428d3fa2b6da9f215959bb3cfad5089b4816bd394d.css integrity="sha256-ujanUI2jQbfys6xCjT+ittqfIVlZuzz61QibSBa9OU0=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin=anonymous>
+<link rel="shortcut icon" href=/favicons/favicon.ico type=image/x-icon>
+<link rel=apple-touch-icon sizes=180x180 href=/favicons/apple-touch-icon.png>
+<link rel=icon type=image/png sizes=32x32 href=/favicons/favicon-32x32.png>
+<link rel=icon type=image/png sizes=16x16 href=/favicons/favicon-16x16.png>
+<link rel=canonical href=/post/-ctf-overthewire-bandit-cozumleri-26-33/>
+<script type=text/javascript src=/js/anatole-header.min.2a2cd9614b7d007dfbb75e8da19e3a0fa872ceab53c6d000c00b7a0c89b85bfc.js integrity="sha256-KizZYUt9AH37t16NoZ46D6hyzqtTxtAAwAt6DIm4W/w=" crossorigin=anonymous></script>
+<script type=text/javascript src=/js/anatole-theme-switcher.min.7fd87181cdd7e8413aa64b6867bb32f3a8dc242e684fc7d5bbb9f600dbc2b6eb.js integrity="sha256-f9hxgc3X6EE6pktoZ7sy86jcJC5oT8fVu7n2ANvCtus=" crossorigin=anonymous></script>
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://cantorun.github.io/images/site-feature-image.png">
+<meta name=twitter:title content="CTF - OverTheWire Bandit Çözümleri 26-33 - SON">
+<meta name=twitter:description content="OverTheWire Bandit CTF'in çözümleri 26'dan 33'e kadar.">
+<meta property="og:title" content="CTF - OverTheWire Bandit Çözümleri 26-33 - SON">
+<meta property="og:description" content="OverTheWire Bandit CTF'in çözümleri 26'dan 33'e kadar.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cantorun.github.io/post/-ctf-overthewire-bandit-cozumleri-26-33/"><meta property="og:image" content="https://cantorun.github.io/images/site-feature-image.png"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2021-09-27T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-09-27T00:00:00+00:00"><meta property="og:site_name" content="Can Torun">
+<meta property="og:see_also" content="https://cantorun.github.io/post/ctf-overthewire-bandit-cozumleri-15-26/"><meta property="og:see_also" content="https://cantorun.github.io/post/ctf-overthewire-bandit-cozumleri-1-15/">
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"post","name":"CTF - OverTheWire Bandit Çözümleri 26-33 - SON","headline":"CTF - OverTheWire Bandit Çözümleri 26-33 - SON","alternativeHeadline":"","description":"
+      OverTheWire Bandit CTF\u0027in çözümleri 26\u0027dan 33\u0027e kadar.
+
+
+    ","inLanguage":"tr","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/cantorun.github.io\/post\/-ctf-overthewire-bandit-cozumleri-26-33\/"},"author":{"@type":"Person","name":"Can Torun"},"creator":{"@type":"Person","name":"Can Torun"},"accountablePerson":{"@type":"Person","name":"Can Torun"},"copyrightHolder":{"@type":"Person","name":"Can Torun"},"copyrightYear":"2021","dateCreated":"2021-09-27T00:00:00.00Z","datePublished":"2021-09-27T00:00:00.00Z","dateModified":"2021-09-27T00:00:00.00Z","publisher":{"@type":"Organization","name":"Can Torun","url":"https://cantorun.github.io","logo":{"@type":"ImageObject","url":"https:\/\/cantorun.github.io\/favicons\/favicon-32x32.png","width":"32","height":"32"}},"image":["https://cantorun.github.io/images/site-feature-image.png"],"url":"https:\/\/cantorun.github.io\/post\/-ctf-overthewire-bandit-cozumleri-26-33\/","wordCount":"466","genre":["CTF"],"keywords":["CTF","OverTheWire","Bandit","Çözüm"]}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9557042978562256" crossorigin=anonymous></script>
+</head>
+<body>
+<header><div class=page-top>
+<a role=button class=navbar-burger data-target=navMenu aria-label=menu aria-expanded=false>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+</a>
+<nav>
+<ul class=nav__list id=navMenu>
+<div class=nav__links>
+<li>
+<a href=/ title>Anasayfa</a>
+</li>
+<li>
+<a href=/post/ title>Yazılar</a>
+</li>
+<li>
+<a href=/about/ title>Hakkımda</a>
+</li>
+</div>
+<li>
+<a class=theme-switch title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<div class=wrapper>
+<aside><div class=sidebar>
+<div class=sidebar__content>
+<div class=logo-title>
+<div class=title>
+<img src=/images/avatar.jpg alt="profile picture">
+<h3 title><a href=/>Can Torun</a></h3>
+<div class=description>
+<p>#!/bin/sh<br> /home/tr<br> </p>
+</div>
+</div>
+</div>
+<ul class=social-links>
+<li>
+<a href=https://github.com/cantorun/ rel=me aria-label=GitHub>
+<i class="fab fa-github fa-2x" aria-hidden=true></i>
+</a>
+</li>
+<li>
+<a href=https://www.instagram.com/ rel=me aria-label=instagram>
+<i class="fab fa-instagram fa-2x" aria-hidden=true></i>
+</a>
+</li>
+</ul>
+</div><footer class="footer footer--sidebar">
+<div class=by_farbox>
+<ul class=footer__list>
+<li class=footer__item>
+&copy;
+Can Torun
+2021
+</li>
+<li class=footer__item>
+<a href=/imprint/ title>
+Yasal
+</a>
+</li>
+</ul>
+</div>
+</footer>
+<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-18600398-4','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZHFCQ4QJY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-TZHFCQ4QJY')</script>
+</div>
+</aside>
+<main>
+<div class=autopagerize_page_element>
+<div class=content>
+<div class="post
+animated fadeInDown">
+<div class=post-content>
+<img class=post-thumbnail src=/images/thumbs/thumb-bandit26-33.jpg alt="Thumbnail image">
+<div class=post-title>
+<h1>CTF - OverTheWire Bandit Çözümleri 26-33 - SON</h1>
+<div class=info>
+<em class="fas fa-calendar-day"></em>
+<span class=date>
+27/9/2021
+</span>
+<em class="fas fa-stopwatch"></em>
+<span class=reading-time>3 dakikalık okuma süresi</span>
+</div>
+</div><br>
+<hr>
+<h3>İçindekiler</h3>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href=#bölüm-27--28>Bölüm 27 → 28</a></li>
+<li><a href=#bölüm-28--29>Bölüm 28 → 29</a></li>
+<li><a href=#bölüm--29--30>Bölüm 29 → 30</a></li>
+<li><a href=#bölüm-30--31>Bölüm 30 → 31</a></li>
+<li><a href=#bölüm-31--32>Bölüm 31 → 32</a></li>
+<li><a href=#bölüm-32--33>Bölüm 32 → 33</a></li>
+<li><a href=#son--söz>Son Söz</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<hr>
+<br><p><a href=https://overthewire.org/wargames/>OverTheWire</a> Bandit CTF çözümlerinin bu yazsında yer alan bölümlerde yoğun olarak <strong>Git</strong> kullanılmakta. Devam etmeden önce git versiyon kontrol sistemi ile ilgili temel bir araştırma yapılması yardımcı olacaktır. İyi eğlenceler..</p>
+<h3 id=bölüm-27--28>Bölüm 27 → 28</h3>
+<p><strong>İpucu:</strong> <em>&lsquo;ssh://bandit27-git@localhost/home/bandit27-git/repo&rsquo;</em> adresinde bir <em>repo</em> olduğu ve bu reponun şifresinin bir sonraki bölümün şifresi olduğu belirtilmiş.</p>
+<p>Her zamanki gibi <em>tmp</em> dizinine geçip çalışma alanımı oluşturuyorum. Ve <em>git</em> ile linkteki depoyu clonluyorum.</p>
+<p><code>git clone ssh://bandit27-git@localhost/home/bandit27-git/repo</code>
+<img src=https://user-images.githubusercontent.com/878595/134068553-db3c5c87-3b65-4c4b-a9a9-d1272665ae40.png alt=ep27-1></p>
+<p>Daha sonra reponun içerisindeki dosyayı okuyorum.
+<img src=https://user-images.githubusercontent.com/878595/134068713-3ca135cd-fcda-41e5-be3d-7c91b2ad97c7.png alt=ep27-2></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>0ef186ac70e04ea33b4c1853d2526fa2</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-28--29>Bölüm 28 → 29</h3>
+<p><strong>İpucu:</strong> Önceki bölüm ile aynı şeyler yazılmış.
+Önceki bölümde yaptığımız gibi ilgili linkteki repoyu clonelayalım.
+<img src=https://user-images.githubusercontent.com/878595/134069741-d835924e-af11-43e5-9fda-bdb98522ffc1.png alt=ep28></p>
+<p>Bu sefer şifrenin sansürlenmiş olduğunu görüyoruz.</p>
+<p><code>git log --oneline</code> ile commit loglarına bakıyoruz.
+<img src=https://user-images.githubusercontent.com/878595/134069885-8bb9ecb0-120d-4950-b8ba-bca98e007b66.png alt=ep28-2></p>
+<p>Eksik verinin eklendiği bir önceki comite dönmek için commit hashi ile checkout alalım(deponun o commit yapıldığı halini görelim) ve dosyayı kontrol edelim.</p>
+<p><code>git checkout c086d11</code>
+<img src=https://user-images.githubusercontent.com/878595/134070104-500e882c-cfa0-4c47-bcf9-3c4aa2489458.png alt=ep28-3></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>bbc96594b4e001778eee9975372716b2</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm--29--30>Bölüm 29 → 30</h3>
+<p><strong>İpucu:</strong> Önceki bölüm ile aynı şeyler yazılmış.</p>
+<p>Yine daha önceki clone rutinlerini gerçekleştiriyorum.</p>
+<p><img src=https://user-images.githubusercontent.com/878595/134722675-c7f47a3b-7c54-4313-8098-fcf93ad75f87.png alt=ep29></p>
+<p>Üretim aşamasında şifre olmadığı not düşülmüş. Branchlerimizi kontrol edelim. Bütün branchleri*(uzaktaki ve lokaldeki)* görebilmek adına *-a* parametresi ile komutumuzu çalıştıralım.
+<code>git branch -a</code>
+<img src=https://user-images.githubusercontent.com/878595/134722798-d746e4c4-6972-42e1-975f-769d56117589.png alt=ep29-2></p>
+<p><em>Dev</em> adında bir branch olduğunu görüyorum muhtemelen aktif olarak geliştirmenin yapıldığı branch burası.
+Checkout ile dev branchine geçelim ve <em>readme.md</em> dosyasını kontrol edelim.
+<code>git checkout origin/dev</code>
+<img src=https://user-images.githubusercontent.com/878595/134723343-03614c99-889e-44cc-8019-545d949ad884.png alt=ep29-3></p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>5b90576bedb2cc04c86a9e924ce42faf</em></p>
+</blockquote>
+<h3 id=bölüm-30--31>Bölüm 30 → 31</h3>
+<p><strong>İpucu:</strong> Önceki bölüm ile aynı şeyler yazılmış.
+Rutin kontrolleri gerçekleştirelim.
+<img src=https://user-images.githubusercontent.com/878595/134724397-8a0e3316-7e82-4e8c-9972-6ff69adb2551.png alt=ep30-1></p>
+<p>Bir şey bulamadık. Git etiketlerine göz atalım.
+<code>Git tag -l</code>
+<img src=https://user-images.githubusercontent.com/878595/134724416-56e9100c-e5c4-4c1d-bed7-851523516afa.png alt=ep30-2></p>
+<blockquote>
+<p>**Şifre: ** <em>47e603bb428404d265f59c42920d81e5</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-31--32>Bölüm 31 → 32</h3>
+<p><strong>İpucu:</strong> Önceki bölüm ile aynı şeyler yazılmış.</p>
+<p>Yine rutin kontrolleri gerçekleştirelim.
+<img src=https://user-images.githubusercontent.com/878595/134725738-a83e31df-f390-4525-b87c-d055b25ba8a6.png alt=ep31-1></p>
+<p>Bu sefer <em>key.txt</em> adında içerisinde <em>&lsquo;May I come in?'</em> yazan bir dosya oluşturup dosyayı pushlamamızı istiyor.</p>
+<p>Vim ile ilgili dosyayı oluşturuyorum
+<img src=https://user-images.githubusercontent.com/878595/134725774-c6665447-a186-4849-80a0-6a72997e1f2e.png alt=ep31-2></p>
+<p><em>Git add</em> ile dosyayı <em>git&rsquo;e</em> eklemeye çalıştığım zaman <em>.gitignore</em> dosyası tarafından <em>keys.txt</em> dosyasının yok sayıldığı ve dosyayı eklemek istiyorsak <em>'-f&rsquo;</em> parametresini kullanmamız gerektiği yazan bir hata alıyoruz.
+<img src=https://user-images.githubusercontent.com/878595/134725781-6eb62807-6b29-4e1c-8c7c-51f4415f4cba.png alt=ep31-3></p>
+<p><em>'-f'</em> kullanarak dosyayı ekliyoruz ve her şey yolunda mı diye kontrol ediyoruz.
+<img src=https://user-images.githubusercontent.com/878595/134725787-2f235c39-80d0-4a02-b8d7-58dcabfbdc02.png alt=ep31-4></p>
+<p>Commit&rsquo;imizi alıyoruz ve pushluyoruz.
+<img src=https://user-images.githubusercontent.com/878595/134725811-fdbf3aa9-1f5e-4b66-a203-a5765c2a7513.png alt=ep31-5></p>
+<blockquote>
+<p>**Şifre: ** <em>56a9bf19c63d650ce78e6ec0354ee45e</em></p>
+</blockquote>
+<hr>
+<h3 id=bölüm-32--33>Bölüm 32 → 33</h3>
+<p><strong>İpucu:</strong> <em>Git</em> ile ilgili bu kadar bölümden sonra yine <em>kaçış</em> zamanı olduğu belirtilmiş.</p>
+<p>Bölüme bağlandığımız da <em>UPPERCASE SHELL</em> adında bir kabuk bizi karşılıyor. Yazdığımız hiç bir komut geçerli değil ve hata mesajlarında yazdığımız komutun büyük harfe çevrilerek <em>sh</em> üzerinde çalıştığını görüyoruz.
+<img src=https://user-images.githubusercontent.com/878595/134729139-6bef9ecd-b509-49a1-9b35-9fbbea8a8b3b.png alt=ep32-1></p>
+<p>Bir dizi başarısız özel karakter denemesinden sonra değişken ile dosya adı geçirebileceğimi böylece büyük harfe çevrilmeden <em>sh</em>&lsquo;ta çalıştırılabileceği aklıma geldi.</p>
+<p>Bu noktada en kolay seçenek <em>shell</em>&lsquo;in kendisini çalıştırmak olacaktı. Bash scriptlerinde <em>$0</em>&lsquo;ın ilk argüman olduğunu ve dosyanın kendisini taşıdığını biliyoruz. dolayısı ile <em>$0</em>&lsquo;ı çalıştırıyorum.</p>
+<p><em>ls</em> ile kontrol edince normal komutların çalışabildiğini görüyorum ve buradan devam ediyorum.
+<img src=https://user-images.githubusercontent.com/878595/134729148-01a458e5-3b3d-433f-863b-0e76a90e8221.png alt=ep32-2>
+<em>uppershell</em> adlı dosya shell olarak tanımlı <strong>bandit33</strong> kullanıcsına ait ve <strong>bandit32</strong> tarafından çalıştırılabilir. Bir <em>escalated privilege</em> durumumuz var. <em>'/etc/bandit_pass/bandit33&rsquo;</em> dosyasını kontrol ediyoruz.</p>
+<blockquote>
+<p><strong>Şifre:</strong> <em>c9c3199ddf4121b10cf581a98d51caee</em></p>
+</blockquote>
+<h3 id=son--söz>Son Söz</h3>
+<p>Bandit CTF&rsquo;in bölümleri burada sona eriyor. Linux temellerinin konu alındığı bu CTF&rsquo;i çözerken oldukça keyif aldım ve bir çok şey öğrendim. Umarım sizin için de keyifli geçmiştir.</p>
+<br>
+<hr>
+<h4>Bu Serideki Yazılar</h4>
+<ul>
+<li><a href=/post/-ctf-overthewire-bandit-cozumleri-26-33/>CTF - OverTheWire Bandit Çözümleri 26-33 - SON</a></li>
+<li><a href=/post/ctf-overthewire-bandit-cozumleri-15-26/>CTF - OverTheWire Bandit Çözümleri 15-26</a></li>
+<li><a href=/post/ctf-overthewire-bandit-cozumleri-1-15/>CTF - OverTheWire Bandit Çözümleri 1-15</a></li>
+</ul>
+<hr>
+<br></div>
+<div class=post-footer>
+<div class=info>
+<span class=separator><a class=category href=/categories/ctf/>CTF</a></span>
+<span class=separator><a class=tag href=/tags/ctf/>CTF</a><a class=tag href=/tags/overthewire/>OverTheWire</a><a class=tag href=/tags/bandit/>Bandit</a><a class=tag href=/tags/%C3%A7%C3%B6z%C3%BCm/>Çözüm</a></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div><footer class="footer footer--base">
+<div class=by_farbox>
+<ul class=footer__list>
+<li class=footer__item>
+&copy;
+Can Torun
+2021
+</li>
+<li class=footer__item>
+<a href=/imprint/ title>
+Yasal
+</a>
+</li>
+</ul>
+</div>
+</footer>
+<script type=text/javascript src=/js/medium-zoom.min.71100d84fab0ad794b8399a66ac810700cc78d703f715dc10af4d7ba7b761362.js integrity="sha256-cRANhPqwrXlLg5mmasgQcAzHjXA/cV3BCvTXunt2E2I=" crossorigin=anonymous></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga('create','UA-18600398-4','auto'),ga('send','pageview'))</script>
+<script async src=https://www.google-analytics.com/analytics.js></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZHFCQ4QJY"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-TZHFCQ4QJY')</script>
+</body>
+</html>
